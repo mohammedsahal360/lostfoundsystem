@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <title>LF System</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h4>Find your Item</h4>
+            <ul class="deskitem">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <button onclick="listopen()" class="dropbtn" id="dropdown-toggle">&#9776;</button>
+            <div class="dropdown-content" id="dropdownMenu">
+                <a href="index.html">Home</a><hr>
+                <a href="#">Home</a><hr>
+                <a href="login.html">Login</a><hr>
+                <a href="#">About</a><hr>
+            </div>
+        </nav>
+    </header>
+    <div class="mainhead">
+        <div class="btnholder">
+            <div class="hbtn"><a href="">SEARCH FOR YOUR LOST ITEM</a></div>
+            <div class="hbtn"><a href="new.html">FOUND AN ANONYMOUS ITEM UPLOAD IT HERE</a></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="top">
+            <div class="founditems">
+                <div class="itemcontainer">
+                </div>
+            </div>
+            <div class="lostitems">
+                <h3>Items Found</h3>
+                <div class="itemcontainer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

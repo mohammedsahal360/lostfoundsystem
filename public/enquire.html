@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Enquire About Item</title>
+</head>
+<body>
+    <header>
+        <h4>Verify Your Item</h4>
+    </header>
+    <div class="container">
+        <h3 id="item-name"></h3>
+        <form id="enquiryForm">
+            <div class="mb-3">
+                <label for="brand" class="form-label">Select Brand:</label>
+                <select id="brand" class="form-select" required></select>
+            </div>
+            <div class="mb-3">
+                <label for="material" class="form-label">Select Material:</label>
+                <select id="material" class="form-select" required></select>
+            </div>
+            <button type="submit" class="btn btn-primary">Verify</button>
+        </form>
+    </div>
+    <script src="enquire.js" defer></script>
+</body>
+</html>
