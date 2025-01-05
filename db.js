@@ -1,12 +1,12 @@
-// db.js
 const mysql = require('mysql2');
 
+// Fetching the MySQL connection details from environment variables
 const connection = mysql.createConnection({
-    host: 'localhost', // Use 'localhost' as your host
-    user: 'root', // Replace with your MySQL username
-    password: 'Sahal@2005', // Replace with your MySQL password
-    database: 'lostfoundsystem', // Your database name
-    port: 3306, // Default MySQL port
+    host: process.env.MYSQL_HOST, // Render's MySQL host URL (provided by Render)
+    user: process.env.MYSQL_USER, // Your MySQL username (provided by Render)
+    password: process.env.MYSQL_PASSWORD, // Your MySQL password (provided by Render)
+    database: process.env.MYSQL_DATABASE, // Your database name (provided by Render)
+    port: process.env.MYSQL_PORT || 3306, // Default MySQL port, 3306
 });
 
 connection.connect((err) => {
